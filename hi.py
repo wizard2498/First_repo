@@ -1,7 +1,10 @@
 from tkinter import *
 
+clicked = 0
 def click():
-    print("You have clicked this button.")
+    global clicked
+    clicked += 1
+    print(f"You have clicked this button {clicked} times.")
 
 
 window = Tk()
